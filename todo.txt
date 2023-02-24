@@ -1,0 +1,10 @@
+auto scrolling, instructors cards with focused one slightly enlarged and only 3,4 visible
+-move hover enlarge effects
+-scroll up button always visible
+-overlay offer/sale with realtime timer remaining time for the end of deal
+-animated on hover icon
+-trusted by ..... fast scrolling companies
+-customer reviews scrolling
+-follow us on yt, github, linkedin footer
+
+-learn to think like a artist/designer/engineer/pro/god  hacker effect or type-type-type & back-back-back & type-type-type
