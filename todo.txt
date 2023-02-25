@@ -10,3 +10,4 @@ auto scrolling, instructors cards with focused one slightly enlarged and only 3,
 
 -learn to think like a artist/designer/engineer/pro/god  hacker effect or type-type-type & back-back-back & type-type-type
 -Pro on hover gives same effect 
+-Maps on image showing team
