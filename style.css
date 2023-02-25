@@ -15,3 +15,9 @@
     width:60%;
 }
 }
+
+body::before{
+    display: block;
+    height:60px;
+    content: '';
+}

@@ -15,12 +15,13 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
+    <script src="index.js" defer></script>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3 fixed-top">
        <div class="container"> 
         <a href="#" class="navbar-brand">Learnera</a>
 
@@ -50,7 +51,7 @@
 
     <!-- Showcase -->
 
-    <section class="bg-dark text-light py-5 px-10 text-center text-md-start" >
+    <section class="bg-dark text-light py-3 px-5 text-center text-md-start" >
         <div class="container" id="showcasesec">
             <div class="d-md-flex">      <!-- Flex until small screen -->
                 <div class="text-md-start">
@@ -69,17 +70,19 @@
 
 
     <!-- Newsletter -->
-<section class="bg-primary">
-   <div class="container">
+<section class="bg-primary fixed-bottom show p-0 "  id="newsletter" style="opacity:0;">
+   <div class="container" >
         <div class="d-lg-flex justify-content-between align-items-center p-3 text-light text-center"> 
             <h3>Sign up for our newsletter</h3>
         
             <div class="input-group ms-auto " id="signupnewsletter">
                 <input type="text" name="" class="form-control" placeholder="Enter email" id=""/>
                 <button class="btn btn-outline-dark bg-dark text-light ">Subscribe</button>
+                <a role="button" class="btn btn-light text-dark" data-bs-toggle="collapse" data-bs-target="#newsletter"><i class="bi bi-x-lg"></i></a>
             </div>
-
+          
         </div>
+        
 </div>
 </section>
 
@@ -87,7 +90,7 @@
 <!--  -->
 <sec class="p-5">
     <div class="container">
-        <div class="row text-center">
+        <div class="row text-center g-2">
 
             <div class="col-md">
                 <div class="card bg-dark text-light">
@@ -131,5 +134,137 @@
     </div>
 </sec>
 
+
+<sec class="p-5" id="learn ">
+    <div class="container  bg-dark text-white mt-2 shadow-lg">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="./images/basics.png" alt="" srcset="" class="img-fluid py-3">
+            </div>
+            <div class="col-md p-5">
+                <h2>Learn from the fundamentals</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem est magnam blanditiis earum pariatur iure sint perferendis incidunt? Corrupti ipsa rerum tempore iusto sunt veniam.</p>
+                <a href="" class="btn btn-light mt-3">Read more <i class="bi bi-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-2 bg-secondary text-white shadow-lg">
+        <div class="row align-items-center justify-content-between">
+            
+            <div class="col-md p-5">
+                <h2>Build up advanced concepts</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem est magnam blanditiis earum pariatur iure sint perferendis incidunt? Corrupti ipsa rerum tempore iusto sunt veniam.</p>
+                <a href="" class="btn btn-dark mt-3">Read more <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="col-md">
+                <img src="./images/pro.png" alt="" srcset="" class="img-fluid">
+            </div>
+
+
+        </div>
+    </div>
+</sec>
+
+
+
+<!-- Question Accordion -->
+
+<section class="p-5" id="question">
+<div class="container">
+    <h2 class="text-center mb-3">Frequently Asked Questions</h2>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <!-- Q1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed " type="button" 
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h5>Where are you located? </h5>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" 
+          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia vitae odio esse velit! Officia eius, cupiditate reiciendis labore nulla adipisci velit debitis molestiae dolor perferendis iure iusto modi repellat!</div>
+        </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h5>How much does it cost?</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" 
+            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia vitae odio esse velit! Officia eius, cupiditate reiciendis labore nulla adipisci velit debitis molestiae dolor perferendis iure iusto modi repellat!</div>
+          </div>
+          </div>
+
+        <!-- Q3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+            <h5>What courses do you provide?</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" 
+            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Find more  at .... belowLorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia vitae odio esse velit! Officia eius, cupiditate reiciendis labore nulla adipisci velit debitis molestiae dolor perferendis iure iusto modi repellat!</div>
+          </div>
+          </div>
+
+                  <!-- Q4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h5>What courses do you provide?</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" 
+            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Find more  at .... belowLorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia vitae odio esse velit! Officia eius, cupiditate reiciendis labore nulla adipisci velit debitis molestiae dolor perferendis iure iusto modi repellat!</div>
+          </div>
+          </div>
+
+
+
+      </div>
+</div>
+
+
+</section>
+
+
+
+<!-- instructors -->
+
+<section id="instructors" class="p-5 bg-primary">
+<div class="container">
+    <h2 class="text-center text-light">Our Instructors</h2>
+    <p class="lead text-center text-white mb-4">Our instructors all have 5 years+ industry experience Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet labore libero sapiente voluptate atque!</p>
+    
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <a href="http://www.freepik.com">Designed by iconicbestiary / Freepik</a>
+<a href="http://www.freepik.com">Designed by pch.vector / Freepik</a> --> 
 </body>
 </html>
