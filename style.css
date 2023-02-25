@@ -1,0 +1,17 @@
+@media screen and (max-width:400px){
+    .hidewhentoosmall{
+        display: none;
+    }
+   #showcasesec{
+        background-image: url('./images/hello.png');
+        background-size: contain;
+        background-repeat:no-repeat ;
+        background-position: 50%;
+    }
+}
+
+@media screen and (min-width:1015px){
+#signupnewsletter{
+    width:60%;
+}
+}

@@ -6,5 +6,7 @@ auto scrolling, instructors cards with focused one slightly enlarged and only 3,
 -trusted by ..... fast scrolling companies
 -customer reviews scrolling
 -follow us on yt, github, linkedin footer
+-better brand icon in nav bar, maybe another color and size
 
 -learn to think like a artist/designer/engineer/pro/god  hacker effect or type-type-type & back-back-back & type-type-type
+-Pro on hover gives same effect 
