@@ -1,5 +1,5 @@
 let newsletterdiv = document.getElementById("newsletter");
-
+$('#goupbtn').hide(0);
 let myScrollFunc = function() {
   let y = window.scrollY;
   if (y >= 1000) {
@@ -17,18 +17,30 @@ let myScrollFunc = function() {
 
 let myScrollFunc2 = function() {
   let y = window.scrollY;
-  if (y <= 100) {
+  if(y<200)
+  {
+    $('#goupbtn').hide(0);
+    if (y <= 100) {
     $('#nav').addClass('bg-dark').removeClass('bg-white');
     $('.nav-link').addClass('text-light').removeClass('text-dark');
     $('.navbar-brand').addClass('text-light').removeClass('text-dark');
+    $('#goupbtn').hide(0);
   }
+}
 
   if(y>100)
   {
     $('#nav').addClass('bg-danger').removeClass('bg-dark');
     $('.nav-link').removeClass('text-light').addClass('text-dark');
     $('.navbar-brand').removeClass('text-light').addClass('text-dark');
+
   }
+
+  if(y>200)
+  {
+    $('#goupbtn').show(0);
+  }
+  
 };
 
 
