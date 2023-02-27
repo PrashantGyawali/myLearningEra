@@ -1,13 +1,11 @@
-auto scrolling, instructors cards with focused one slightly enlarged and only 3,4 visible
--move hover enlarge effects
--scroll up button always visible
+-move hover enlarge effects (done)
+-scroll up button always visible (done)
 -overlay offer/sale with realtime timer remaining time for the end of deal
--animated on hover icon
--trusted by ..... fast scrolling companies
+-animated on hover icon 
+-trusted by ..... fast scrolling companies  (done)
 -customer reviews scrolling
 -follow us on yt, github, linkedin footer
 -better brand icon in nav bar, maybe another color and size
 
--learn to think like a artist/designer/engineer/pro/god  hacker effect or type-type-type & back-back-back & type-type-type
--Pro on hover gives same effect 
--Maps on image showing team
+-learn to think like a artist/designer/engineer/pro/god  type-type-type & back-back-back & type-type-type (done)
+

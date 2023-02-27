@@ -42,16 +42,25 @@ z-index: 1;
     transform: scale(1.06);
 }
 
+.typing1{
+    border-right: 3px solid #ffffff;
+    transition: border 0.5s ease-in-out ;
+}
 
 
+.font40{
+    font-size: 115px;
+    color: black;
+    text-shadow: 2px 2px 10px #858585;
+}
 
 
 .container2{
     display:flex;
     position:relative;
     flex-direction:row;
-    width:97vw;
-   height:530px;
+    width:95vw;
+   height:520px;
   overflow:hidden;
   background-color: black;
   }
@@ -74,3 +83,29 @@ z-index: 1;
 .cardx{
   height: 490px;
 }
+
+.moveup{
+    height: 50px;
+    animation: up  3s linear infinite;
+    height: 30px;
+ 
+}
+
+@keyframes up {
+    0% {
+      transform: translateY(200%);
+      /* opacity: 0; */
+    }
+    45%{
+        transform: translateY(0%);
+    }
+    70%{
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+      transform: translateY(-120%);
+    }
+  }
+
+

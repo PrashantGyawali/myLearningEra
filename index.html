@@ -9,6 +9,7 @@
      rel="stylesheet" 
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <link rel="stylesheet" 
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" 
       integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
@@ -22,6 +23,7 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <div id="topdiv" style=" position:absolute; top:-50%; height:0px; width:0px"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-2 fixed-top" id="nav">
@@ -58,26 +60,20 @@
         <div class="container" id="showcasesec">
             <div class="d-md-flex">      <!-- Flex until small screen -->
                 <div class="text-md-start">
-                    <h1>Become a <span class="text-warning">Pro</span></h1>
+                    <h1>Become a <span class="text-warning typing1">Pro</span></h1>
                     <p class="lead my-3">
-                        We focus on teaching our students directly from industry experts
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        We focus on teaching our students directly from industry experts.
+                        Whether you are looking to learn advanced concepts or starting from the beginning, learn a new skill or brush up your skill, with more than 3000+ courses we have got just the right course for you.
                     </p>
                     <button class="btn btn-primary btn-lg" data-bs-toggle="modal"  data-bs-target="#signupform">Get Started</button>
 
-
-
-
-
-                    
+                   
                 </div>
                 <img src="./images/hello.png" class="img-fluid ms-auto hidewhentoosmall" alt="" srcset="" style="height:325px;width: 470px;">
                 <!-- <img src="./images/pro2.svg" alt="" srcset=""> -->
             </div>
         </div>
     </section>
-
-
   
   <!-- Modal -->
   <div class="modal fade" id="signupform" tabindex="-1" role="dialog" aria-labelledby="signuplabel" aria-hidden="true">
@@ -147,14 +143,14 @@
     <div class="container">
         <div class="row text-center g-2">
 
-            <div class="col-md zoomcard" >
+            <div class="col-md zoomcard h-100" >
                 <div class="card bg-dark text-light">
                     <div class="card-body text-center">
                         <div class="h1">
                             <i class="bi bi-laptop mb-2"></i> / <i class="bi bi-person-square "></i>
                         </div>
                             <h3 class="card-title mb-3">Live Sessions</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur velit officiis sed dolorem optio?</p>
+                            <p class="card-text">On demand live classes and doubt clearing sessions are availabe for all the courses.</p>
                             <a class="btn btn-primary"> Learn More </a>
                     </div>  
                 </div>
@@ -167,20 +163,20 @@
                             <i class="bi bi-play-btn-fill mb-2 "></i>
                         </div>
                             <h3 class="card-title mb-3 text-light ">Recorded Classes</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur velit officiis sed dolorem optio?</p>
+                            <p class="card-text">Over 10000 hours of recorded video content available on multitude of different topics</p>
                             <a class="btn btn-dark"> Learn More </a>
                         </div>  
                 </div>
             </div>
             
-            <div class="col-md zoomcard" >
+            <div class="col-md zoomcard " >
                 <div class="card bg-dark text-light">
                     <div class="card-body text-center">
                         <div class="h1">
                             <i class="bi bi-people mb-2"></i>
                         </div>
                             <h3 class="card-title mb-3">In Person</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur velit officiis sed dolorem optio?</p>
+                            <p class="card-text">Nearby our headquaters? Drop by and have a chat with our instructors over a coffee</p>
                             <a class="btn btn-primary"> Learn More </a>
                         </div>  
                 </div>
@@ -188,6 +184,15 @@
         </div>
     </div>
 </sec>
+
+
+<section class="p-2 container" id="think" style="border-radius: 13px; background-color: black;">
+    <div class="container mx-auto row ">
+    <div class="col-12 col-sm-6 text-center  text-sm-end" ><h2 class="text-white" style="text-shadow: 2px 2px 4px #00ffea;">Learn to think like </h2></div>
+    <div  style="overflow: hidden;" class="col-12 col-sm-6 text-center  text-sm-start"><h2 class="moveup text-danger" id="test" style="text-shadow: 2px 2px 3px #ffffff;">an Artist</h2></div>
+    </div>
+    </section>
+
 
 
 <sec class="p-5" id="learn ">
@@ -221,7 +226,6 @@
         </div>
     </div>
 </sec>
-
 
 
 <!-- Question Accordion -->
@@ -278,11 +282,11 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed" type="button" 
-              data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h5>What courses do you provide?</h5>
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h5>What are the pre-requisites to take the courses?</h5>
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" 
+            <div id="flush-collapseFour" class="accordion-collapse collapse" 
             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body"> Find more  at .... belowLorem ipsum dolor sit amet consectetur adipisicing elit. Eius mollitia vitae odio esse velit! Officia eius, cupiditate reiciendis labore nulla adipisci velit debitis molestiae dolor perferendis iure iusto modi repellat!</div>
           </div>
@@ -303,7 +307,7 @@
 
 
 
-<section class="mb-5 mt-2" >
+<section class="mb-5 mt-2" id="courses" >
     <div class=" container-fluid container2 " style="border-radius: 19px;">
 
 
@@ -315,7 +319,7 @@
             <div class="card-body h-75">
                 <img src="./images/react.png" alt="" srcset="" class="img-fluid mb-3 h-50">
                 <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-                <button class="btn btn-primary">Join Course</button>
+                <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
               </div>
            </div>
        </div>
@@ -323,33 +327,33 @@
 
        <div class="col-lg-5 col-md-6 col-sm-8 cards  bg-dark">
         <div class="card cardx bg-dark text-center">
-          <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Frontend Development</h3></div>
+          <div class="card-title mt-2 p-2"><h3 class="text-center text-white">3D modelling</h3></div>
           <div class="card-body h-75">
               <img src="./images/blender.png" alt="" srcset="" class="img-fluid mb-3 h-50">
               <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-              <button class="btn btn-primary">Join Course</button>
+              <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
             </div>
          </div>
      </div>
 
      <div class="col-lg-5 col-md-6 col-sm-8 cards bg-dark">
       <div class="card cardx bg-dark text-center">
-        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Frontend Development</h3></div>
+        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Stock Market Analysis</h3></div>
         <div class="card-body h-75">
             <img src="./images/stocks.png" alt="" srcset="" class="img-fluid mb-3 h-50">
             <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-            <button class="btn btn-primary">Join Course</button>
+            <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
           </div>
        </div>
    </div>
 
    <div class="col-lg-5 col-md-6 col-sm-8 cards bg-dark">
     <div class="card cardx bg-dark text-center">
-      <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Frontend Development</h3></div>
+      <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Video editing and animation</h3></div>
       <div class="card-body h-75">
           <img src="./images/vid.png" alt="" srcset="" class="img-fluid mb-3 h-50">
           <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-          <button class="btn btn-primary">Join Course</button>
+          <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
       </div>
      </div>
  </div>
@@ -358,22 +362,22 @@
 
     <div class="col-lg-5 col-md-6 col-sm-8 cards bg-dark">
       <div class="card cardx bg-dark text-center">
-        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Frontend Development</h3></div>
+        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Content Creation</h3></div>
         <div class="card-body h-75">
             <img src="./images/photography.png" alt="" srcset="" class="img-fluid mb-3 h-50">
             <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-            <button class="btn btn-primary">Join Course</button>
+            <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
           </div>
        </div>
     </div>
 
     <div class="col-lg-5 col-md-6 col-sm-8 cards bg-dark">
       <div class="card cardx bg-dark text-center">
-        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Frontend Development</h3></div>
+        <div class="card-title mt-2 p-2"><h3 class="text-center text-white">Advanced Algbra and Calculus</h3></div>
         <div class="card-body h-75 ">
             <img src="./images/math.png" alt="" srcset="" class="img-fluid mb-3 h-50">
             <p class="card-text text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-            <button class="btn btn-primary">Join Course</button>
+            <button class="btn btn-primary"  data-bs-toggle="modal"  data-bs-target="#signupform">Join Course</button>
           </div>
        </div>
     </div>
@@ -402,29 +406,16 @@
             <div class="card bg-light">
                 <div class="card-body text-center">
                     <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="" class="rounded-circle mb-3 img-fluid">
-                    <h3 class="card-title mb-3">John Doe</h3>
+                    <h3 class="card-title mb-3">Steve Boxs</h3>
                     <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-                    <a href=""><i class="bi bi-twitter text-dark"></i></a>
-                    <a href=""><i class="bi bi-facebook text-dark"></i></a> 
-                    <a href=""><i class="bi bi-linkedin text-dark"></i></a>
-                    <a href=""><i class="bi bi-instagram text-dark"></i></a>
+                    <a href=""><i class="bi bi-twitter text-blue"></i></a>
+                    <a href=""><i class="bi bi-facebook text-blue"></i></a> 
+                    <a href=""><i class="bi bi-linkedin text-blue"></i></a>
+                    <a href=""><i class="bi bi-instagram text-danger"></i></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6 col-lg-3 zoomcard">
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="" class="rounded-circle mb-3 img-fluid">
-                    <h3 class="card-title mb-3">John Doe</h3>
-                    <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-                    <a href=""><i class="bi bi-twitter text-dark"></i></a>
-                    <a href=""><i class="bi bi-facebook text-dark"></i></a> 
-                    <a href=""><i class="bi bi-linkedin text-dark"></i></a>
-                    <a href=""><i class="bi bi-instagram text-dark"></i></a>
-                </div>
-            </div>
-        </div>
 
 
 
@@ -432,12 +423,12 @@
         <div class="card bg-light">
             <div class="card-body text-center">
                 <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="" class="rounded-circle mb-3 img-fluid">
-                <h3 class="card-title mb-3">John Doe</h3>
+                <h3 class="card-title mb-3">Johanna Dome</h3>
                 <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-                <a href=""><i class="bi bi-twitter text-dark"></i></a>
-                <a href=""><i class="bi bi-facebook text-dark"></i></a> 
-                <a href=""><i class="bi bi-linkedin text-dark"></i></a>
-                <a href=""><i class="bi bi-instagram text-dark"></i></a>
+                <a href=""><i class="bi bi-twitter text-blue"></i></a>
+                <a href=""><i class="bi bi-facebook text-blue"></i></a> 
+                <a href=""><i class="bi bi-linkedin text-blue"></i></a>
+                <a href=""><i class="bi bi-instagram text-danger"></i></a>
             </div>
         </div>
     </div>
@@ -445,13 +436,29 @@
     <div class="col-md-6 col-lg-3 zoomcard">
         <div class="card bg-light">
             <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="" class="rounded-circle mb-3 img-fluid">
-                <h3 class="card-title mb-3">John Doe</h3>
+                <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="" class="rounded-circle mb-3 img-fluid">
+                <h3 class="card-title mb-3">James Bell</h3>
                 <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
-                <a href=""><i class="bi bi-twitter text-dark"></i></a>
-                <a href=""><i class="bi bi-facebook text-dark"></i></a> 
-                <a href=""><i class="bi bi-linkedin text-dark"></i></a>
-                <a href=""><i class="bi bi-instagram text-dark"></i></a>
+                <a href=""><i class="bi bi-twitter text-blue"></i></a>
+                <a href=""><i class="bi bi-facebook text-blue"></i></a> 
+                <a href=""><i class="bi bi-linkedin text-blue"></i></a>
+                <a href=""><i class="bi bi-instagram text-danger"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="" class="rounded-circle mb-3 img-fluid">
+                <h3 class="card-title mb-3">Enna Smith</h3>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum ea neque nulla quaerat consectetur.</p>
+                <a href=""><i class="bi bi-twitter text-blue"></i></a>
+                <a href=""><i class="bi bi-facebook text-blue"></i></a> 
+                <a href=""><i class="bi bi-linkedin text-blue"></i></a>
+                <a href=""><i class="bi bi-instagram text-danger"></i></a>
             </div>
         </div>
     </div>
@@ -463,6 +470,121 @@
 
 </div>
 </section>
+
+<section class=" pt-2 bg-dark" style="  text-shadow: 2px 2px 8px #b8b8b8;" >
+    <h2 class="text-center text-light mb-3">Our Trusted Partners</h2>
+<div class=" row autoplay" style="width:99.5vw">
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark " style="border: none;">
+            <div class="card-body text-center">
+                <h1><i class="bi bi-discord  font40" ></i></h1>
+                </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark" style="border: none;">
+            <div class="card-body text-center">
+                <h1><i class="bi bi-apple  font40" ></i></h1>
+                </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark" style="border: none;">
+            <div class="card-body text-center" >
+                <h1><i class="bi bi-snapchat  font40" style="border: none;"></i></h1>
+                </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark" style="border: none;">
+            <div class="card-body text-center" >
+                <h1><i class="bi bi-facebook  font40" ></i></h1>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark" style="border: none;">
+            <div class="card-body text-center mx-auto" >
+                <h1><i class="bi bi-youtube  font40" ></i></h1>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-3 zoomcard">
+        <div class="card bg-dark" style="border: none;">
+            <div class="card-body text-center mx-auto"  >
+                <h1><i class="bi bi-google  font40" ></i></h1>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="pb-5 bg-dark" >
+    <div class=" row autoplay2" style="width:99.5vw" dir="rtl">
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-ubuntu  font40" ></i></h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-browser-firefox  font40" ></i></h1>
+                    </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-microsoft font40" ></i></h1>
+                    </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-github  font40" ></i></h1>
+                    </div>
+            </div>
+        </div>
+    
+    
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-twitch font40" ></i></h1>
+                    </div>
+            </div>
+        </div>
+    
+    
+        <div class="col-md-6 col-lg-3 zoomcard">
+            <div class="card bg-dark" style="border: none;">
+                <div class="card-body text-center" >
+                    <h1><i class="bi bi-twitter  font40" ></i></h1>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
 
 
 

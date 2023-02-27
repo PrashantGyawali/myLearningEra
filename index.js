@@ -1,3 +1,63 @@
+$('body').css('opacity','0');
+setTimeout(()=>{$('body').css('opacity','1');
+
+},500)
+
+
+
+let autoplaycarousel={slidesToScroll: 1,
+  speed: 2000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
+  slidesToScroll: 1,
+  accessibility:false,
+  draggable:false,
+  pauseOnHover:false,
+infinite:true,
+arrows:false,
+
+responsive: [
+  {
+    breakpoint: 720,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+
+  {
+    breakpoint: 1500,
+    settings: {
+      slidesToShow: 5
+    }
+  },
+  {
+    breakpoint: 540,
+    settings: {
+      slidesToShow: 2
+    }
+  }
+]}
+
+
+let autoplaycarousel2={
+  __proto__: autoplaycarousel,
+  rtl:true
+};
+
+
+
+$(document).ready(function(){
+  $('.autoplay').slick(autoplaycarousel);
+});
+	
+$(document).ready(function(){
+  $('.autoplay2').slick(autoplaycarousel2);
+});
+	
+
+
+
 let newsletterdiv = document.getElementById("newsletter");
 $('#goupbtn').hide(0);
 let myScrollFunc = function() {
@@ -176,3 +236,125 @@ window.addEventListener("scroll", function(){
    } // else was horizontal scroll
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
+
+typingeffect1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function typingeffect1()
+{
+  
+// List of sentences
+var _CONTENT = [ "Pro😎", "Artist", "Designer", "Developer","Pro😎", "Engineer" , "Teacher", "Creator", "Dancer", "CEO😎"];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector(".typing1");
+
+// Implements typing effect
+function Type() { 
+
+
+
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+    _ELEMENT.style.borderColor='rgba(0,0,0,0)';
+
+    setTimeout(()=>{
+      _ELEMENT.style.borderColor='rgba(255,255,255,1)';
+             setTimeout(() => {_ELEMENT.style.borderColor='rgba(0,0,0,0)'; setTimeout(()=>{_ELEMENT.style.borderColor='rgba(255,255,255,1)';},700)}, 700)
+             ;},500);
+
+
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 2500);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+}
+
+
+
+var iterationCount=0;
+wordmovein();
+function wordmovein(){
+  document.getElementById('test').onanimationiteration = () => {
+    let words=["an Artist","a Creator","a Programmer","a Scientist","a CEO","a Boss"];
+    iterationCount<(words.length-1)?iterationCount++:iterationCount=0;
+    $('#test').text(words[iterationCount]);
+  };
+}
