@@ -1,11 +1,11 @@
 -move hover enlarge effects (done)
 -scroll up button always visible (done)
 -overlay offer/sale with realtime timer remaining time for the end of deal
--animated on hover icon 
+ 
 -trusted by ..... fast scrolling companies  (done)
 -customer reviews scrolling
 -follow us on yt, github, linkedin footer
--better brand icon in nav bar, maybe another color and size
+-better brand icon in nav bar, maybe another color and size-animated on hover icon
 
 -learn to think like a artist/designer/engineer/pro/god  type-type-type & back-back-back & type-type-type (done)
 

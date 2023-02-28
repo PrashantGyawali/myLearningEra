@@ -16,13 +16,10 @@ let autoplaycarousel={slidesToScroll: 1,
   pauseOnHover:false,
 infinite:true,
 arrows:false,
-
 responsive: [
   {
     breakpoint: 720,
-    settings: {
-      slidesToShow: 3
-    }
+    settings: { slidesToShow: 3}
   },
 
   {
@@ -62,6 +59,7 @@ let newsletterdiv = document.getElementById("newsletter");
 $('#goupbtn').hide(0);
 let myScrollFunc = function() {
   let y = window.scrollY;
+
   if (y >= 1000) {
     newsletterdiv.style.transition='opacity 0.75s linear';
     setTimeout(() => {
@@ -83,17 +81,22 @@ let myScrollFunc2 = function() {
     if (y <= 100) {
     $('#nav').addClass('bg-dark').removeClass('bg-white');
     $('.nav-link').addClass('text-light').removeClass('text-dark');
+    $('.dollarsign').removeClass('text-warning').addClass('text-dark')
     $('.navbar-brand').addClass('text-light').removeClass('text-dark');
     $('#goupbtn').hide(0);
+
+
   }
 }
 
   if(y>100)
   {
+
+
     $('#nav').addClass('bg-danger').removeClass('bg-dark');
+    $('.dollarsign').addClass('text-warning').removeClass('text-dark')
     $('.nav-link').removeClass('text-light').addClass('text-dark');
     $('.navbar-brand').removeClass('text-light').addClass('text-dark');
-
   }
 
   if(y>200)
@@ -122,7 +125,7 @@ function myfunction() {
   }
 }
 myfunction();
-console.log(a);
+
 if(!a)
 {
   console.log('hello');
@@ -357,4 +360,90 @@ function wordmovein(){
     iterationCount<(words.length-1)?iterationCount++:iterationCount=0;
     $('#test').text(words[iterationCount]);
   };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// company name typing effect
+
+
+const letters = "abcdEfghijkLmnopqrstuvwyz";
+
+let interval = null;
+let finaltxt='myLearningEra'
+document.getElementById('companyname').onmouseleave = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerHTML = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+
+          if(index==2)
+          {
+            return `<span class="text-danger">L</span>`
+          }
+
+          if(index==10)
+          {
+            return `<span class="text-warning">E</span>`
+          }
+
+          if(index==13)
+          {
+            return ` `;
+          }
+
+          if(index==14||index==15||index==16)
+          {
+
+          if(window.scrollY>100)
+          {return `<span class="dollarsign text-warning">$</span>` ;}
+
+          if(window.scrollY<=100)
+          {return `<span class="dollarsign text-dark">$</span>` ;}
+
+          }
+
+          return `${finaltxt[index]}`
+        }
+      
+        if(index>13 && window.scrollY<=100)
+        {return `<span  style="color: rgba(0,0,0,0)">${letters[Math.floor(Math.random() * 25)]}</span>`;}
+        if(index>13 && window.scrollY>100)
+        {return `<span class="text-warning">${letters[Math.floor(Math.random() * 25)]}</span>`;}
+        if(index==2)
+        {
+          return `<span class="text-danger">${letters[Math.floor(Math.random() * 25)]}</span>`;
+        }
+        if(index==10)
+        {
+          return `<span class="text-warning">${letters[Math.floor(Math.random() * 25)]}</span>`
+        }
+        else{
+        return `<span class="text-secondary" >${letters[Math.floor(Math.random() * 25)]}</span>`;
+        }
+      })
+      .join("");
+    
+    if(iteration >= 16){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
 }
