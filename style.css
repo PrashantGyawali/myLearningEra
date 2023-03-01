@@ -108,4 +108,16 @@ z-index: 1;
     }
   }
 
+.nav-item:active{
+transform: scale(1.05);
+}
+#companyname:hover{
+    transform: scale(1.05);
+}
 
+.nav-item:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 4px #dbdbdb;
+}
+
+    
