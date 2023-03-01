@@ -120,4 +120,82 @@ transform: scale(1.05);
     box-shadow: 2px 2px 4px #dbdbdb;
 }
 
+
+.adbg{
+    background-image: url('./images/bigbrain.gif');
+    transform: scaleX(-100%);
+    background-size:contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
     
+
+    @media screen and (max-width:575px) {
+
+        .modal_ad{
+            background-image: url('./images/darkbrain.gif');
+            background-size:contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .blurdiv{
+            backdrop-filter: blur(0.9px);
+            text-shadow: 1px 1px 1px #00ffaa;
+        }
+    }
+
+
+    @media screen and (max-width:600px) {
+        .sale_ad_title{
+            font-size: 33px;
+        }
+        .sale_ad_content{
+            font-size: 23px;
+            color: #000000;
+        }
+
+        .salesale{
+            font-size: 32px ;
+        }
+        #countdowntxt{
+            font-size: 35px;
+            color:#1100ff;
+        }
+
+    }
+
+    @media screen and (min-width:600px) {
+        .sale_ad_title{
+            font-size: 45px;
+        }
+        .sale_ad_content{
+            font-size: 27px;
+                color: #0750ee;
+            }
+        
+
+        .salesale{
+            font-size: 40px ;
+        }
+
+        #countdowntxt{
+            font-size: 42px;
+            color:#eeb807;
+        }
+
+        @media screen and (min-width:792px) {
+        #countdowntxt{
+            font-size: 50px;
+        }
+         }
+}
+
+
+    .savesale{
+        background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+        -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    font-weight: 700;
+    }
+

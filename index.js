@@ -3,7 +3,9 @@ setTimeout(()=>{$('body').css('opacity','1');
 
 },500)
 
-
+setTimeout(() => {
+  $('#huhubtn').click();
+}, 5000);
 
 let autoplaycarousel={slidesToScroll: 1,
   speed: 2000,
@@ -16,6 +18,9 @@ let autoplaycarousel={slidesToScroll: 1,
   pauseOnHover:false,
 infinite:true,
 arrows:false,
+swipe:false,
+touchMove:false,
+
 responsive: [
   {
     breakpoint: 720,

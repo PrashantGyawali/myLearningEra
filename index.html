@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamps.org</title>
+    <title>myLearningEra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
      rel="stylesheet" 
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -15,6 +15,7 @@
       integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
       crossorigin="anonymous">
       <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+      <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
 
@@ -25,6 +26,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <div id="topdiv" style=" position:absolute; top:-50%; height:0px; width:0px"></div>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-2 fixed-top" id="nav">
        <div class="container"> 
@@ -119,8 +121,34 @@
   </div>
 
 
+  <!-- Sale ad -->
+  <div class="modal text-center" tabindex="-1" id="salead">
+    <div class="modal-dialog text-center modal-fullscreen" style="transform:scale(0.8,0.8);">
+      <div class="modal-content ">
+        <div class="modal-header d-flex">
+          <h5 class="modal-title w-100 savesale" style="text-align: center; float:left; font-size: 35px;">Save upto 90% on your first course</h5>
+          <div style="float:right"><button type="button" class="btn-close text-start" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        </div> 
+        <div class="modal-body text-center d-sm-flex bg-dark modal_ad" style="overflow: hidden;">
+          <div class="container m-0 blurdiv" ><h1 class="text-danger fw-bold sale_ad_title">This is Sam</h1>
+          <h5 class="sale_ad_content">Sam saved 18 dollars on his 20 dollar advanced mathematics course. Sam is smart. Be like Sam.</h5>
+          <h3 class="text-danger text-center salesale fw-bold">
+            Sale Ends In..
+          </h3>  
+          <p class="h1" id="countdowntxt"></p></div>
+          <div class="container adbg h-100 w-100 d-none bg-dark d-sm-block"></div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center bg-primary">
+          <button type="button" class="btn btn-danger text-center" style="font-size: 1.5em;" data-bs-toggle="modal" data-bs-target="#signupform" data-bs-dismiss="modal">Sign Up Now!!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Newsletter -->
+  <button data-bs-toggle="modal" data-bs-target="#salead" style="width:0px; height:0px; border:none; margin:0px; opacity: 0;" id="huhubtn"></button>
+
+
+  <!-- Newsletter -->
 <section class="bg-secondary fixed-bottom show p-0 "  id="newsletter" style="opacity:0; border:2px solid grey; z-index:10">
    <div class="container" >
         <div class="d-lg-flex justify-content-between align-items-center p-3 text-light text-center"> 
@@ -188,7 +216,7 @@
 
 
 
-<sec class="pb-5 px-5 pt-1" id="learn ">
+<section class="pb-5 px-md-5 px-sm-1 pt-1" id="learn ">
 
     <section class="pt-2 container bg-dark my-0" id="think">
     <div class="container mx-auto row ">
@@ -202,7 +230,7 @@
             <div class="col-md">
                 <img src="./images/basics.png" alt="" srcset="" class="img-fluid py-3">
             </div>
-            <div class="col-md p-5">
+            <div class="col-md py-5 px-3">
                 <h2>Learn from the fundamentals</h2>
                 <p>Trying to learn a new skill? Just starting out? No problem we teach from the basics in an interactive way. Have some doubts? You can direclty connect to our instructors or request for a live session. </p>
                 <a href="" class="btn btn-light mt-3">Read more <i class="bi bi-chevron-right"></i></a>
@@ -226,12 +254,12 @@
 
         </div>
     </div>
-</sec>
+</section>
 
 
 <!-- Question Accordion -->
 
-<section class="p-5" id="questions">
+<section class="p-md-5 p-sm-1" id="questions">
 <div class="container">
     <h2 class="text-center mb-3">Frequently Asked Questions</h2>
 
@@ -654,7 +682,7 @@
 
 
 
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+<!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
 
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoicmljZWJpIiwiYSI6ImNsZWs4azRqNTBpeDgzcG1pdWx5M3kzZDcifQ.crcUJBvrE3BHrj1bebkQug';
@@ -664,7 +692,39 @@
       center:[-93.105410,44.7401249],
       zoom:18.67
     });
-  </script>
+  </script> -->
+
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date((new Date()).getTime()+172800000).getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("countdowntxt").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdowntxt").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 
 </body>
 </html>
