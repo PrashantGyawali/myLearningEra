@@ -4,8 +4,8 @@
  
 -trusted by ..... fast scrolling companies  (done)
 -customer reviews scrolling
--follow us on yt, github, linkedin footer
--better brand icon in nav bar, maybe another color and size-animated on hover icon
+-follow us on yt, github, linkedin footer (done)
+-better brand icon in nav bar, maybe another color and size-animated on hover icon(done)
 
 -learn to think like a artist/designer/engineer/pro/god  type-type-type & back-back-back & type-type-type (done)
 
