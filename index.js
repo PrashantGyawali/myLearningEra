@@ -1,7 +1,5 @@
 $('body').css('opacity','0');
-setTimeout(()=>{$('body').css('opacity','1');
-
-},500)
+setTimeout(()=>{$('body').css('opacity','1');},300)
 
 setTimeout(() => {
   $('#huhubtn').click();
@@ -12,7 +10,6 @@ let autoplaycarousel={slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 0,
   cssEase: 'linear',
-  slidesToScroll: 1,
   accessibility:false,
   draggable:false,
   pauseOnHover:false,
@@ -26,9 +23,8 @@ responsive: [
     breakpoint: 720,
     settings: { slidesToShow: 3}
   },
-
   {
-    breakpoint: 1500,
+    breakpoint: 2500,
     settings: {
       slidesToShow: 5
     }
@@ -57,9 +53,6 @@ $(document).ready(function(){
   $('.autoplay2').slick(autoplaycarousel2);
 });
 	
-
-
-
 let newsletterdiv = document.getElementById("newsletter");
 $('#goupbtn').hide(0);
 let myScrollFunc = function() {
@@ -89,15 +82,11 @@ let myScrollFunc2 = function() {
     $('.dollarsign').removeClass('text-warning').addClass('text-dark')
     $('.navbar-brand').addClass('text-light').removeClass('text-dark');
     $('#goupbtn').hide(0);
-
-
   }
 }
 
   if(y>100)
   {
-
-
     $('#nav').addClass('bg-danger').removeClass('bg-dark');
     $('.dollarsign').addClass('text-warning').removeClass('text-dark')
     $('.nav-link').removeClass('text-light').addClass('text-dark');
@@ -124,9 +113,9 @@ function myfunction() {
   || navigator.userAgent.match(/iPod/i)
   || navigator.userAgent.match(/BlackBerry/i)
   || navigator.userAgent.match(/Windows Phone/i)) {
-     a = true ;
+    a = true ;
   } else {
-     a = false ;
+    a = false ;
   }
 }
 myfunction();
@@ -142,9 +131,6 @@ function(){
 });
 
 }
-
-
-
 
 
 let cardz=Array.from(document.querySelectorAll('.zoomcard'));
@@ -191,7 +177,7 @@ setInterval(()=>
               
         }
 
-             else{
+            else{
                 carde.style.opacity='0'
                 pos=(posdeterminer+cards.length)*50+'%';
                 carde.style.left=pos;

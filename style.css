@@ -1,13 +1,13 @@
 @media screen and (max-width:400px){
-    .hidewhentoosmall{
-        display: none;
-    }
-   #showcasesec{
-        background-image: url('./images/hello.png');
-        background-size: contain;
-        background-repeat:no-repeat ;
-        background-position: 50%;
-    }
+.hidewhentoosmall{
+    display: none;
+}
+#showcasesec{
+    background-image: url('./images/hello.png');
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: 50%;
+}
 }
 
 @media screen and (min-width:1015px){
@@ -56,22 +56,22 @@ z-index: 1;
 
 
 .container2{
-    display:flex;
-    position:relative;
-    flex-direction:row;
-    width:95vw;
-   height:520px;
-  overflow:hidden;
-  background-color: black;
-  }
-  
-  .cards{
-    margin:2px;
-     position: absolute;
-     height: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+display:flex;
+position:relative;
+flex-direction:row;
+width:95vw;
+height:520px;
+overflow:hidden;
+background-color: black;
+}
+
+.cards{
+margin:2px;
+position: absolute;
+height: 500px;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
     }
 
     .card:hover
@@ -190,12 +190,11 @@ transform: scale(1.05);
          }
 }
 
-
-    .savesale{
-        background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
-        -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
-    font-weight: 700;
-    }
+.savesale{
+background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+letter-spacing: -1px;
+font-weight: 700;
+}
 
